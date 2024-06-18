@@ -71,4 +71,5 @@ def credentials(username):
         print("User not found")
         return "User not found", 404
 
-
+if __name__ == "__main__":
+    app.run(debug=True)
