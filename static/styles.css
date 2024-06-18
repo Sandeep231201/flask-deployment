@@ -1,0 +1,95 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  color: #333;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"],
+form button {
+  width: 100%;
+  background-color: #505050; /* Darker grey */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+  background-color: #696969; /* Even darker grey */
+}
+
+input[type="submit"]:hover {
+  background-color: #696969; /* Even darker grey */
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+button {
+  background-color: #505050; /* Darker grey */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 20%;
+}
+
+button:hover {
+  background-color: #696969; /* Even darker grey */
+}
+
+#home_heading {
+  text-align: center;
+  font-size: 55px;
+  color: #505050; /* Darker grey */
+}
+
+#home_p {
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
+}
+
+#home_div {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  font-size: 20px;
+  color: #505050; /* Darker grey */
+}

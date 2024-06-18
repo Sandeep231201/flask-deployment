@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registrationForm" action="/register" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+
+    <div>
+        <p>Already have an account?</p>
+        <button onclick="location.href='/login'">Login</button>
+
+        <p>Wanna Go Back Just Click Below</p>
+        <button onclick="location.href='/'">Home</button>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            var username = document.getElementById('username').value.toLowerCase();
+            var email = document.getElementById('email').value.toLowerCase();
+
+            document.getElementById('username').value = username;
+            document.getElementById('email').value = email;
+        });
+    </script>
+</body>
+</html>
