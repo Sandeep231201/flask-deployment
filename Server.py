@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
 # MongoDB Setup
-# Replace the connection string with your own
+url = "mongodb+srv://sandeep231201:sandeep231201@loginpagecluster.p8fykfu.mongodb.net/?retryWrites=true&w=majority&appName=loginPageCluster"
 
 client = MongoClient(url, server_api=ServerApi("1"))
 # Send a ping to confirm a successful connection
@@ -71,4 +71,5 @@ def credentials(username):
         return "User not found", 404
 
 
-
+if __name__ == "__main__":
+    app.run(debug=True)
