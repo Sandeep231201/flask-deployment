@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
+import os
 
 # MongoDB Setup
-url = "mongodb+srv://sandeep231201:sandeep231201@loginpagecluster.p8fykfu.mongodb.net/?retryWrites=true&w=majority&appName=loginPageCluster"
+url = os.environ.get("url")
 
 client = MongoClient(url, server_api=ServerApi("1"))
 # Send a ping to confirm a successful connection
