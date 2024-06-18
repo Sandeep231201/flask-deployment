@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
 # MongoDB Setup
-url = "mongodb+srv://sandeep231201:sandeep231201@loginpagecluster.p8fykfu.mongodb.net/?retryWrites=true&w=majority&appName=loginPageCluster"
+# Replace the connection string with your own
 
 client = MongoClient(url, server_api=ServerApi("1"))
 # Send a ping to confirm a successful connection
